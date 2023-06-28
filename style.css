@@ -22,7 +22,7 @@ body {
 }
 
 .page {
-  width: 38.4rem; 
+  width: 43rem; 
   margin: 0 auto;  
   
 }
@@ -57,6 +57,7 @@ nav p {
 
 header {
   height: 28rem;
+  width: 43rem;
   margin: 0 auto;
    
   background: #8E9AAF;   
@@ -73,7 +74,7 @@ header img {
   margin: 0 auto;
   background: #CBC0D3; 
   max-height: 5rem;
-  width: 38.4rem;  
+  width: 43rem;  
 }
 
 .title h1 {
@@ -195,7 +196,7 @@ main img {
   }
 }
 
-@media (min-width: 384px) {
+@media (min-width: 429px) {
   .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,4 +211,3 @@ main img {
   }
 
 }
-
