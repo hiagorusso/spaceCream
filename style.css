@@ -15,10 +15,10 @@ body {
   font-size: 1.6rem;
   background: #EFF1FF;
 
-  display: grid;
+  /*display: grid;
   grid-template-areas: "profile timeline";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh;*/
 }
 
 .page {
@@ -26,34 +26,6 @@ body {
   margin: 0 auto;  
   
 }
-
-nav {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 6.3rem;
- 
-}
-
-nav p {
-  display: flex;
-  margin: 1rem auto;
-  text-align: center;
-  
-  width: 30.5rem;     
-  height: 7.5rem;
- 
-  font-family: 'Palanquin', sans-serif;
-  font-weight: 400;     
-  line-height: 1.5rem;
-  font-size: 1.5rem;  
- 
-  
-  
-  color: #23053A;
-    
-}
-
-
 
 header {
   height: 28rem;
@@ -88,12 +60,30 @@ header img {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-font-smoothing: antialiased;
+}
+
+nav p {
+  display: flex;
+  margin: 1rem auto;
+  text-align: center;
+  
+  width: 30.5rem;     
+  height: 7.5rem;
+ 
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 400;     
+  line-height: 1.5rem;
+  font-size: 1.5rem;  
+   
+  color: #23053A;
+    
 }
 
 main {
   width: 32rem;  
     
-  margin: 1.4rem auto;
+  margin: 16.3rem auto;
   animation: downtop 2s 5ms backwards;
 
   display: grid;
@@ -116,8 +106,6 @@ main div:nth-child(3) {
 main div:nth-child(4) {
   grid-area: D;
 }
-
-
 
 main img {
   border-radius: 2rem;
@@ -170,6 +158,11 @@ main img {
   text-transform: uppercase;
 }
 
+footer {
+  display: none;
+
+}
+
 
 @keyframes topdown {
   0% {
@@ -197,17 +190,41 @@ main img {
 }
 
 @media (min-width: 429px) {
+
+  nav {
+    background: #8E9AAF;
+    height: 100vh;
+    
+  }
+
+  nav p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    line-height: 1.25rem; 
+    justify-content: center;
+
+    width: 18rem;     
+    height: 17rem;
+    
+  }
+
   .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    margin-right: 100%;            
   }
 
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:20px
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    margin: 4rem 6.2rem auto;
+  }
 
+  footer {
+    display: inline;
+    margin-right: 100%;
   }
 
 }
